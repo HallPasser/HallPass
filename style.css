@@ -1,0 +1,98 @@
+* {
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+  }
+  
+  body {
+	background-color: #36393f;
+	color: #fff;
+  }
+  
+  h1 {
+	text-align: center;
+	margin-top: 50px;
+  }
+  
+  form {
+	width: 400px;
+	margin: 50px auto;
+	background-color: #2f3136;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #000;
+  }
+  
+  label {
+	display: block;
+	margin-bottom: 10px;
+  }
+  
+  select,
+  input[type="text"],
+  input[type="email"],
+  button {
+	width: 100%;
+	padding: 10px;
+	border: none;
+	border-radius: 3px;
+	background-color: #40444b;
+	color: #fff;
+	margin-bottom: 20px;
+  }
+  
+  input[type="checkbox"] {
+	margin-right: 10px;
+  }
+  
+  button {
+	background-color: #7289da;
+	cursor: pointer;
+  }
+  
+  button:hover {
+	background-color: #677bc4;
+  }
+  
+  #custom-pass-options {
+	display: none;
+	margin-top: 20px;
+  }
+  
+  .addon-option {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+  }
+  
+  .addon-option label {
+	margin-left: 5px;
+  }
+  
+  #name-input-text {
+	position: absolute;
+	color: #999;
+	font-size: 14px;
+	left: 12px;
+	top: 18px;
+	pointer-events: none;
+	transition: 0.2s ease all;
+  }
+  
+  #name-input:focus + #name-input-text,
+  #name-input:not(:placeholder-shown) + #name-input-text {
+	font-size: 10px;
+	top: -8px;
+	left: 6px;
+	color: #7289da;
+	background-color: #2f3136;
+	padding: 0 5px;
+	border-radius: 3px;
+  }
+  
+  .teacher-signature {
+	font-size: 14px;
+	color: #999;
+	margin-left: 5px;
+  }

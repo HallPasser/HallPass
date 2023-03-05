@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Buy Hall Pass</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Buy Hall Pass</h1>
+    
+    <form id="hall-pass-form">
+      <label for="pass-type">Hall Pass Type:</label>
+      <select id="pass-type" name="pass-type">
+        <option value="blank">Blank Pass ($2)</option>
+        <option value="custom">Custom Pass ($5)</option>
+      </select>
+      
+      <div id="custom-pass-options" style="display: none;">
+        <div class="add-on">
+          <label for="time-input">Name Input:</label>
+          <input type="text" id="name-input" name="name-input" placeholder="Enter Name">
+        </div>
+        <div class="add-on">
+          <label for="time-input">Time Input:</label>
+          <select id="time-input" name="time-input">
+            <option value="" selected disabled>Select Time</option>
+            <option value="8am-11am">8am-11am</option>
+            <option value="11am-2pm">11am-2pm</option>
+            <option value="2pm-3pm">2pm-3pm</option>
+          </select>
+        </div>
+        <div class="add-on">
+          <label for="teacher-signature">Teacher Signature: <span>Included</span></label>
+        </div>
+      </div>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+      
+      <button type="submit">Buy Pass</button>
+      <div id="error-message"></div>
+    </form>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/2.3.1/sha.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
