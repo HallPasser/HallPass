@@ -16,7 +16,8 @@
   }
   
   form {
-	width: 400px;
+	width: 90%;
+	max-width: 400px;
 	margin: 50px auto;
 	background-color: #2f3136;
 	padding: 20px;
@@ -96,62 +97,39 @@
 	color: #999;
 	margin-left: 5px;
   }
-
-@media only screen and (max-width: 768px) {
-  /* Make the form inputs stack on top of each other */
-  .form-group {
-    display: block;
-    margin-bottom: 15px;
-  }
   
-  /* Make the form labels full width and center aligned */
-  label {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 5px;
-  }
-  
-  /* Reduce the font size of the form inputs */
-  input[type="text"],
-  input[type="email"],
-  select {
-    font-size: 14px;
-  }
-  
-  /* Increase the font size of the form buttons */
-  button {
-    font-size: 16px;
-  }
-  
-  /* Make the form container width 100% */
-  .container {
-    width: 100%;
-    padding: 0;
-  }
-}
+  /* Mobile styles */
+  @media only screen and (min-width: 600px) {
 
-@media (max-width: 767px) {
-  form {
-    padding: 20px;
-    max-width: 500px;
-    margin: 0 auto;
-  }
+	form {
+	  width: 90%;
+	  max-width: 100%;
+	  margin: 50px auto;
+	}
+  
+	/* Adjust font size and line height for better readability on small screens */
+	label,
+	input,
+	select,
+	button {
+	  font-size: 1.2rem;
+	  line-height: 1.5;
+	}
 
-  input[type="text"], input[type="email"], select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    font-size: 16px;
+	form {
+		margin: 0 20px;
+		width: calc(100% - 40px);
+	  }
+	
+	  /* Adjust font size and line height for better readability on small screens */
+	  label, input, select, button {
+		font-size: 1.2rem;
+		line-height: 1.5;
+	  }
+	
+	  /* Increase height of form on mobile */
+	  form {
+		margin-top: 20px;
+		height: 600px;
+	  }
   }
-
-  input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-}
