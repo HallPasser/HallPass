@@ -96,3 +96,36 @@
 	color: #999;
 	margin-left: 5px;
   }
+
+@media only screen and (max-width: 768px) {
+  /* Make the form inputs stack on top of each other */
+  .form-group {
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  /* Make the form labels full width and center aligned */
+  label {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  
+  /* Reduce the font size of the form inputs */
+  input[type="text"],
+  input[type="email"],
+  select {
+    font-size: 14px;
+  }
+  
+  /* Increase the font size of the form buttons */
+  button {
+    font-size: 16px;
+  }
+  
+  /* Make the form container width 100% */
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+}
